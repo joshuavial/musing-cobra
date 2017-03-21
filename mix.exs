@@ -14,7 +14,7 @@ defmodule MusingCobra.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :extwitter]]
+    [applications: [:logger, :extwitter, :httpoison]]
   end
 
   # Dependencies can be Hex packages:
@@ -28,7 +28,8 @@ defmodule MusingCobra.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-     {:extwitter, "~> 0.8"}
+      {:extwitter, "~> 0.8"},
+      {:httpoison, "~> 0.10.0"}
     ]
   end
 end
