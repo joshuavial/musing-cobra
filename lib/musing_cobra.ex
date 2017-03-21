@@ -1,0 +1,2 @@
+defmodule MusingCobra do
+end
